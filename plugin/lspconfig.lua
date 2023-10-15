@@ -66,6 +66,7 @@ protocol.CompletionItemKind = {
 
 -- Set up completion using nvim_cmp with LSP source
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
+capabilities.offsetEncoding = { "utf-16" }
 
 nvim_lsp.flow.setup {
   on_attach = on_attach,
@@ -77,6 +78,11 @@ nvim_lsp.tsserver.setup {
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
   cmd = { "typescript-language-server", "--stdio" },
   capabilities = capabilities
+}
+
+nvim_lsp.clangd.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
 
 nvim_lsp.sourcekit.setup {

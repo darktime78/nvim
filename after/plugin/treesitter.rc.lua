@@ -22,6 +22,9 @@ ts.setup {
     "yaml",
     "swift",
     "css",
+    "c",
+    "cpp",
+    "go",
     "html",
     "lua"
   },

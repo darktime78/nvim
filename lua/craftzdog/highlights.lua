@@ -8,7 +8,7 @@ vim.opt.background = 'dark'
 vim.opt.listchars = {
   eol = '⤶',
   tab = '→-',
-  space = '·',
+  space = '\u{ea71}',
   trail = '•',
   extends = '◀',
   precedes = '▶',
@@ -18,6 +18,7 @@ vim.opt.list = true
 -- set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 -- set listchars=eol:¬,space:·,lead:\ ,trail:·,nbsp:◇,tab:→-,extends:▸,precedes:◂,multispace:···⬝,leadmultispace:\│\ \ \ ,
 
+-- space = '·',
 -- highlight yanked text for 200ms using the "Visual" highlight group
 vim.cmd [[
   augroup highlight_yank
