@@ -1,7 +1,8 @@
 # nvim
 dotfiles configuration for nvim   
 
-### configuration default path    
+### configuration default path 
+Get current path :echo stdpath('config')   
 #### for Linux   
 */home/$USER/.config/nvim*   
 Or if $XDG_CONFIG_HOME is defined: $XDG_CONFIG_HOME/nvim/init.vim       
